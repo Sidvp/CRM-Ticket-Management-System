@@ -1,4 +1,27 @@
 @import "bootstrap/dist/css/bootstrap.css";
+
+.default-layout{
+  display: grid;
+  grid-template-rows: 80px auto 3rem;
+  grid-template-areas: "header" "main" "footer";
+}
+
+header{
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+  min-height: 80vh;
+}
+
+footer{
+  grid-area: footer;
+  background: black;
+  padding: 1rem;
+  color: white;
+}
+
 /* .App {
   text-align: center;
 }

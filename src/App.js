@@ -10,7 +10,9 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 // import { Jumbotron } from 'react-bootstrap';
 
-import { Login } from './views/login/Login.page';
+// import { Login } from './views/login/Login.page';
+import { DefaultLayout } from './layout/DefaultLayout'
+import { Dashboard } from './views/dashboard/Dashboard.page'
 
 function App() {
   return (
@@ -19,7 +21,11 @@ function App() {
       {/* Hello World */}
       {/* <Button>Test Button</Button> */}
       {/* <Jumbotron className="form-box"> Page </Jumbotron> */}
-      <Login />
+      {/* <Login /> */}
+
+      <DefaultLayout>
+        <Dashboard />
+      </DefaultLayout>
      
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
